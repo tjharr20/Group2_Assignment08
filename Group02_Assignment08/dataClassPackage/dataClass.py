@@ -13,4 +13,5 @@ class Data:
                               'Database=' + "GroceryStoreSimulator" +';'
                               'uid=IS4010Login;'
                               'pwd=P@ssword2;')
-        cursor = conn.cursor()
+        cursor = conn.cursor()
+        return cursor

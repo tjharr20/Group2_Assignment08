@@ -22,4 +22,3 @@ if __name__ == "__main__":
     for row in myCursor:
         print(row[1], end=", ")
     
-   
