@@ -2,7 +2,7 @@
 import pyodbc
 class Data: 
     
-    def Connect(self, myDatabase = "GroceryStoreSimulator"): #Database defult is IS4010
+    def Connect(self, myDatabase = "GroceryStoreSimulator"): #Database default is IS4010
         '''
         Connect to the database and create a cursor 
         @return: The cursor object 
