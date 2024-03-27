@@ -16,7 +16,7 @@ if __name__ == "__main__":
     #Invoke the connect method and store what it returns in another variable 
     myCursor = myData.Connect("GroceryStoreSimulator")   
     
-    
+    #Provide the Cursor with SQL query 
     myCursor.execute(
         '''
         SELECT TOP 5 tName.NameID, tName.Name, tProduct.ProductID, tTransactionDetail.QtyOfProduct 
@@ -26,7 +26,8 @@ if __name__ == "__main__":
         ORDER BY tTransactionDetail.QtyOfProduct DESC
     '''
     )
-    
+
+    #Create Print Statement 
     print ("The Top 5 Items sold are", end=" ")
     for row in myCursor:
         print(row[1], end=", ")
