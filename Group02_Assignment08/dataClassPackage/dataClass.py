@@ -11,7 +11,7 @@
 
 import pyodbc
 class Data: 
-    
+    #Create the connect function
     def Connect(self, myDatabase = "GroceryStoreSimulator"): #Database default is IS4010
         '''
         Connect to the database and create a cursor 
