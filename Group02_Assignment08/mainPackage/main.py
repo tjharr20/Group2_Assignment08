@@ -1,4 +1,5 @@
 #main.py
+import string
 
 # Name: TJ Harrington, Ben Klein, Ryan Wilkins
 # email: harrints@mail.uc.edu
@@ -27,8 +28,21 @@ if __name__ == "__main__":
     '''
     )
 
-    #Create Print Statement 
-    print ("The Top 5 Items sold are", end=" ")
+    #Create a list to store cursor values 
+    itemList = []
+    #Create a loop to get the values
     for row in myCursor:
-        print(row[1], end=", ")
+        itemList.append(row[1])
+
+
+    #Assign the item strings the list values
+    item0 = itemList[0]
+    item1 = itemList[1]
+    item2 = itemList[2]
+    item3 = itemList[3]
+    item4 = itemList[4]
+    #Print end result
+    print ("The Top 5 Items sold are", item0+",", item1+",",item2+",",item3,"&",item4+".")
+    
+
     
